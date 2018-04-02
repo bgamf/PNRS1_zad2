@@ -16,56 +16,62 @@
         >
         <EditText
             android:id="@+id/regUsername"
-            android:hint="Username"
+            android:hint="Username*"
+            android:singleLine="true"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             />
 
         <EditText
             android:id="@+id/regFirstName"
             android:hint="First Name"
+            android:singleLine="true"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
             />
 
         <EditText
             android:id="@+id/regPassword"
-            android:hint="Password"
+            android:hint="Password*"
             android:password="true"
+            android:singleLine="true"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="50dp"
+            android:layout_below="@+id/regUsername"
             />
 
         <EditText
             android:id="@+id/regLastName"
+            android:hint="Last Name"
+            android:singleLine="true"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/regFirstName"
-            android:layout_alignTop="@+id/regPassword"
-            android:hint="Last Name" />
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/regFirstName"
+             />
 
         <EditText
             android:id="@+id/regEmail"
-            android:hint="Email"
+            android:hint="Email*"
+            android:singleLine="true"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="100dp"
+            android:layout_below="@+id/regPassword"
             />
 
         <TextView
             android:id="@+id/gender"
-            android:text="gender:"
+            android:text="@string/gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/regEmail"
-            android:layout_alignStart="@+id/regFirstName"
+            android:layout_toLeftOf="@+id/regGender"
             />
 
         <Spinner
@@ -73,15 +79,15 @@
             android:entries="@array/gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/gender"
-            android:layout_toEndOf="@+id/gender" />
+            android:layout_alignBaseline="@+id/gender"
+            android:layout_alignParentRight="true" />
 
         <CheckBox
             android:id="@+id/regCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignBaseline="@+id/regNotifications"
+            android:layout_below="@+id/regEmail"
             />
 
         <TextView
@@ -89,17 +95,24 @@
             android:text="Accept Notifications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/regCheckBox"
-            android:layout_marginTop="150dp"
+            android:layout_alignBaseline="@+id/regCheckBox"
             />
+        <TextView
+            android:id="@+id/birthDate"
+            android:text="@string/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regCheckBox"
+            />
+
 
         <DatePicker
             android:id="@+id/regCalendar"
-            android:layout_width="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="175dp"
-            android:layout_height="wrap_content"></DatePicker>
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/birthDate"
+            ></DatePicker>
 
         <Button
             android:id="@+id/regButton"

@@ -32,7 +32,8 @@
     <EditText
         android:id="@+id/messsage"
         android:hint="@string/messageString"
-        android:layout_width="250dp"
+        android:singleLine="true"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

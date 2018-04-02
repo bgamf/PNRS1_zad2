@@ -6,6 +6,8 @@
     <string name="contact">my friend</string>
     <string name="send">SEND</string>
     <string name="messageString">message text</string>
+    <string name="gender">gender:</string>
+    <string name="date">Birth date:</string>
     <string-array name="gender">
         <item>male</item>
         <item>female</item>
