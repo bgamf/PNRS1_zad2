@@ -2,6 +2,10 @@
     <string name="app_name">Chat Application</string>
     <string name="login">LOGIN</string>
     <string name="register">REGISTER</string>
+    <string name="logout">LOG OUT</string>
+    <string name="contact">my friend</string>
+    <string name="send">SEND</string>
+    <string name="messageString">message text</string>
     <string-array name="gender">
         <item>male</item>
         <item>female</item>

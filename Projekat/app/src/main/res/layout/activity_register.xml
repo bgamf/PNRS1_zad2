@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="branislav.gamf.chatapplication.MainActivity"
+    tools:context="branislav.gamf.chatapplication.RegisterActivity"
     >
     <RelativeLayout
         android:layout_width="fill_parent"
