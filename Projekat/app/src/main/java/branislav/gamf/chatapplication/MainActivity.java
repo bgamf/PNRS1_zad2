@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final EditText usernameTextEdit = (EditText) findViewById(R.id.inputUsername);
-        final EditText passwordTextEdit = (EditText) findViewById(R.id.inputPassword);
+        final EditText usernameTextEdit = (EditText) findViewById(R.id.loginUsername);
+        final EditText passwordTextEdit = (EditText) findViewById(R.id.loginPassword);
         final Button loginButton = (Button) findViewById(R.id.buttonLogin);
         final Button registerButton = (Button) findViewById(R.id.buttonRegister);
         final boolean[] usernameValid = {false};
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,RegisterActivity.class));
             }
         });
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,ContactsActivity.class));
             }
         });

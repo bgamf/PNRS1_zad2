@@ -2,4 +2,8 @@
     <string name="app_name">Chat Application</string>
     <string name="login">LOGIN</string>
     <string name="register">REGISTER</string>
+    <string-array name="gender">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
 </resources>
