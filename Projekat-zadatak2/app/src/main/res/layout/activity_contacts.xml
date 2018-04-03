@@ -7,11 +7,11 @@
     android:orientation="vertical"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    tools:context="branislav.gamf.chatapplication.MessageActivity"
+    tools:context="branislav.gamf.chatapplication.ContactsActivity"
     >
 
     <Button
-        android:id="@+id/logoutButton2"
+        android:id="@+id/logoutButton1"
         android:text="@string/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,25 +19,24 @@
         android:layout_alignParentRight="true"
         />
 
-    <Button
-        android:id="@+id/sendButton"
-        android:text="@string/send"
-        android:enabled="false"
+    <TextView
+        android:id="@+id/myChatList"
+        android:text="@string/myChatList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/logoutButton1"
+        android:gravity="center"
         />
 
-    <EditText
-        android:id="@+id/messsage"
-        android:hint="@string/messageString"
-        android:singleLine="true"
-        android:layout_width="230dp"
+    <ListView
+        android:id="@+id/customListView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/myChatList"
         android:layout_alignParentLeft="true"
-        />
+        ></ListView>
 
 
 </RelativeLayout>
