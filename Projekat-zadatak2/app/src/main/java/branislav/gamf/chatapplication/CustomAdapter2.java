@@ -2,6 +2,7 @@ package branislav.gamf.chatapplication;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -73,11 +74,11 @@ public class CustomAdapter2 extends BaseAdapter {
         //                == false right
         if(message.backgroundColor == true){
             holder.messageText.setBackgroundColor(Color.parseColor("#C0C0C0"));
-            holder.messageText.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+            holder.messageText.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);;
         }
         else{
             holder.messageText.setBackgroundColor(Color.parseColor("#FFFFFF"));
-            holder.messageText.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+            holder.messageText.setGravity(Gravity.CENTER_VERTICAL | Gravity.END);;
         }
 
         return convertView;

@@ -57,6 +57,7 @@
         android:layout_above="@+id/sendButton"
         android:layout_below="@+id/logoutButton2"
         android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
         ></ListView>
 
 
